@@ -1,5 +1,5 @@
-var React = require('react'); //modulo react
-var {Text, View, Button, AppRegistry} = require('react-native');
+import React from 'react'; //modulo react
+import {Text, View, Button, AppRegistry} from 'react-native';
 /*() => { return App} é a msm coisa  que () => App*/
 const gerarNumeroAleatorio = () => {
   var numero_aleatorio = Math.floor(Math.random()*10);

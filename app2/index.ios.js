@@ -2,11 +2,18 @@
 import React from 'react';
 import {Text,View, AppRegistry} from 'react-native';
 
+//Formatações
+const Estilos = {
+  estiloTexto: {
+    fontSize: 50
+  }
+};
+
 //Criar o Componente
 const App2 = () => {
   return (
     <View>
-      <Text> "Oi"</Text>
+      <Text style={Estilos.estiloTexto}> "Oi"</Text>
     </View>
   );
 };

@@ -1,5 +1,5 @@
 //Import
-import react from 'react';
+import React from 'react';
 import {Text,View, AppRegistry} from 'react-native';
 
 //Criar o Componente

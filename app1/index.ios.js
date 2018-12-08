@@ -14,7 +14,7 @@ const App = () => {
       <View>
         <Text>Gerador de Números Aleatórios</Text> 
         <Button 
-          title="Gera um número randômico"
+          title="Gera um número aleatório"
           onPress={gerarNumeroAleatorio}
          /> 
       </View>

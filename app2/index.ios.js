@@ -12,4 +12,4 @@ const App2 = () => {
 };
 
 //Renderizar para o dispositivo
-AppRegistry.registerComponent('app2', () => App);
+AppRegistry.registerComponent('app2', () => App2);

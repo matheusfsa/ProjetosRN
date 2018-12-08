@@ -7,4 +7,4 @@ const App = function(){
     );
 };
 
-AppRegistry.register Component('app1', function(){ return App});
+AppRegistry.register Component('app1', function(){ return App;});

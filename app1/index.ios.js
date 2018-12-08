@@ -9,4 +9,4 @@ const App = () =>
     );
 };
 
-AppRegistry.registerComponent('app1', () =>  App);s
+AppRegistry.registerComponent('app1', () =>  App);

@@ -5,6 +5,6 @@ const App = function(){
   return (
       <Text>Meu primeiro APP</Text>
     );
-}
+};
 
 AppRegistry.register Component('app1', function(){ return App});

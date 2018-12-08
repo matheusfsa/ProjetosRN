@@ -13,7 +13,7 @@ const Estilos = {
 const App2 = () => {
   return (
     <View>
-      <Text style={Estilos.estiloTexto}> "Oi"</Text>
+      <Text style={Estilos.estiloTexto}> "Frases do dia"</Text>
     </View>
   );
 };

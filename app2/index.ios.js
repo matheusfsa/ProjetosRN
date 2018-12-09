@@ -17,8 +17,7 @@ const App2 = () => {
   const {principal} = Estilos;
   return (
     <View style={principal}>
-      <Image source={{uri: 'https://facebook.github.io/react/logo-og.png'}}
-       style={{width: 400, height: 400}} />
+      <Image source={require('./imgs/uvas.png')}/>
     </View>
   );
 };

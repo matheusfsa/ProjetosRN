@@ -31,9 +31,7 @@ const Estilos = {
 
   estiloView: {
     flex: 1, //1:1
-    backgroundColor: 'skyblue',
-    justifyContent: 'center',//Vertical
-    alignItems: 'flex-start '
+    backgroundColor: 'skyblue'
 
   }
 

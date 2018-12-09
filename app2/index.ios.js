@@ -30,9 +30,9 @@ const Estilos = {
   }, 
 
   estiloView: {
+    flex: 1, //1:1
     backgroundColor: 'skyblue',
-    height:300,
-    justifyContent: 'stretch',//Vertical
+    justifyContent: 'center',//Vertical
     alignItems: 'flex-start '
 
   }

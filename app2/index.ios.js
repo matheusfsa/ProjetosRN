@@ -7,8 +7,8 @@ const Estilos = {
   estiloTexto: {
     fontSize: 30,
     backgroundColor: '#08509B',
-    height: 50,
-    width: 50
+    height: 300,
+    width: 300
   }
 };
 

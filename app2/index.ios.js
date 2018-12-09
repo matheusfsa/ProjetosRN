@@ -27,7 +27,7 @@ const gerarNovaFrase = () => {
               "Se a pessoa me oferecer cachaça, a amizade acaba...de começar.",
               "Me diga com quem tu andas, e eu te direi se irei junto.",
               "Estou quase morando sozinho. Só falta a minha família se mudar."];
-  Alert.alert(frases[o])
+  Alert.alert(frases[i])
 }
 //Criar o Componente
 const App2 = () => {

@@ -5,7 +5,10 @@ import {Text,View, AppRegistry} from 'react-native';
 //Formatações
 const Estilos = {
   estiloTexto: {
-    fontSize: 50
+    fontSize: 30,
+    backgroundColor: '#08509B',
+    height: 50,
+    width: 50
   }
 };
 
@@ -19,4 +22,4 @@ const App2 = () => {
 };
 
 //Renderizar para o dispositivo
-AppRegistry.registerComponent('app2', () => App2);
+AppRegistry.registerComponent('app2', () => App2

@@ -1,6 +1,6 @@
 //Import
 import React from 'react';
-import {Text,View, AppRegistry} from 'react-native';
+import {Text,View, AppRegistry,Button} from 'react-native';
 
 //Formatações
 const Estilos = {

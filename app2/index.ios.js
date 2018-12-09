@@ -21,7 +21,7 @@ const Estilos = {
     fontWeight: 'bold'
   }
 };
-const botaoPressionado = () => {
+const botaoPressionado = () => {}
 //Criar o Componente
 const App2 = () => {
   const {principal, botao, textoBotao} = Estilos;

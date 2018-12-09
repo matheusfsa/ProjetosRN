@@ -25,7 +25,7 @@ const gerarNovaFrase = () => {
   var i = Math.floor(Math.random()*4);
   var frases = ["Relacionamento é para ter paz. Se for para passar nervoso, prefiro dobrar lençol com elástico.", 
               "Se a pessoa me oferecer cachaça, a amizade acaba...de começar.",
-              "Me diga com quem tu andas, e eu te direi se irei junto."
+              "Me diga com quem tu andas, e eu te direi se irei junto.",
               "Estou quase morando sozinho. Só falta a minha família se mudar."];
   Alert.alert(frases[o])
 }

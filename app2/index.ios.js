@@ -6,7 +6,12 @@ import {Text,View, AppRegistry, Image} from 'react-native';
 const Estilos = {
   principal:{
     paddingTop:40
+  }, 
+  imagem:{
+    justifyContent:'flex-end',
+    paddingBottom: 5
   }    
+
 
 };
 const botaoPressionado = () => {
@@ -14,10 +19,12 @@ const botaoPressionado = () => {
 }
 //Criar o Componente
 const App2 = () => {
-  const {principal} = Estilos;
+  const {principal,imagem} = Estilos;
   return (
     <View style={principal}>
-      <Image source={require('./imgs/uvas.png')}/>
+      <Image style={imagem} source={require('./imgs/uvas.png')}>
+        <Text>Legenda</Text>
+      </Image>
     </View>
   );
 };

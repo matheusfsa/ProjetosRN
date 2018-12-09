@@ -17,6 +17,7 @@ const App2 = () => {
     <View style={principal}>
       <Button 
         title='Clique Aqui'
+        color="#841584"
       />
     </View>
   );

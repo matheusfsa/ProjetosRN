@@ -7,8 +7,7 @@ const Estilos = {
   estiloTexto: {
     fontSize: 30,
     backgroundColor: '#08509B',
-    height: 300,
-    width: 300
+    height: 70
   }
 };
 
@@ -22,4 +21,4 @@ const App2 = () => {
 };
 
 //Renderizar para o dispositivo
-AppRegistry.registerComponent('app2', () => App2
+AppRegistry.registerComponent('app2', () => App2);

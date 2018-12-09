@@ -1,6 +1,6 @@
 //Import
 import React from 'react';
-import {Text,View, AppRegistry, Image, TouchableOpacity} from 'react-native';
+import {Text,View, AppRegistry, Image, TouchableOpacity, Alert} from 'react-native';
 
 //Formatações
 const Estilos = {
@@ -27,7 +27,7 @@ const gerarNovaFrase = () => {
               "Se a pessoa me oferecer cachaça, a amizade acaba...de começar.",
               "Me diga com quem tu andas, e eu te direi se irei junto."
               "Estou quase morando sozinho. Só falta a minha família se mudar."];
-  alert(frases[i])
+  Alert.alert(frases[o])
 }
 //Criar o Componente
 const App2 = () => {

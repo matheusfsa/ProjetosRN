@@ -9,15 +9,19 @@ const Estilos = {
   }    
 
 };
-
+const botaoPressionado = () => {
+  alert('Botao Pressionado')
+}
 //Criar o Componente
 const App2 = () => {
   const {principal} = Estilos;
   return (
     <View style={principal}>
       <Button 
-        title='Clique Aqui'
+        onPress={botaoPressionado} 
+        title="Clique Aqui"
         color="#841584"
+        accessibilityLabel="Clique para abrir as notíciaas"
       />
     </View>
   );

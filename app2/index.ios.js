@@ -20,14 +20,31 @@ const Estilos = {
     //Largura e Altura(em dp): width e height
     //espaçamento interno: padding{Top,Botton, Left, Right, Vertical, Horizontal}
     //espaçamento externo: margin{Top,Botton, Left, Right, Vertical, Horizontal}
+  },
+  estiloTexto2: {
+    fontSize: 30,
+    backgroundColor: '#08509B',
+    paddingTop:15,
+    color: '#fff',
+    textAlign: 'justify'
+  }, 
+
+  estiloView: {
+    backgroundColor: 'skyblue',
+    height:300,
+    justifyContent: 'stretch',//Vertical
+    alignItems: 'flex-start '
+
   }
+
 };
 
 //Criar o Componente
 const App2 = () => {
+  const {estiloTexto, estiloView} = Estilos;
   return (
-    <View>
-      <Text style={Estilos.estiloTexto}> "Frases do dia"</Text>
+    <View style={estiloView}>
+      <Text style={estiloTexto}> "Frases do dia"</Text>
     </View>
   );
 };

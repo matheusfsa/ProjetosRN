@@ -1,6 +1,6 @@
 //Import
 import React from 'react';
-import {Text,View, AppRegistry,Button} from 'react-native';
+import {Text,View, AppRegistry, Image} from 'react-native';
 
 //Formatações
 const Estilos = {
@@ -17,12 +17,7 @@ const App2 = () => {
   const {principal} = Estilos;
   return (
     <View style={principal}>
-      <Button 
-        onPress={botaoPressionado} 
-        title="Clique Aqui"
-        color="#841584"
-        accessibilityLabel="Clique para abrir as notíciaas"
-      />
+      <Image source={require('./imgs/uvas.png')}/>
     </View>
   );
 };

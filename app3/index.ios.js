@@ -16,15 +16,19 @@ import {
 export default class app3 extends Component {
   constructor(props){
     super(props);
-    this.state = {escolhaUsuario:""}
+    this.state = {escolhaUsuario:"", escolhaComputador:""}
   }
   jokenpo(escolhaUsuario){
-    this.setState({escolhaUsuario:escolhaUsuario})
+    var escolhaComputador = ["pedra", "papel", "tesoura"];
+    var numAleatorio = Math.floor(Math.random()*3);
+    this.setState({ escolhaUsuario:escolhaUsuario,
+                    escolhaComputador : escolhaComputador[numAleatorio]
+                    });
   }
   render(){
     return(
       <View>
-        <Text> computador</Text>
+        <Text> computador: {this.state.escolhaComputador}</Text>
         <Text> user: {this.state.escolhaUsuario}</Text>
         <Text> res </Text>
         <Button title="pedra" onPress={() => {this.jokenpo('pedra')}}/>

@@ -13,7 +13,8 @@ import {
   Button,
   Image
 } from 'react-native';
-
+import Topo from './src/components/topo.js'
+import Icone from './src/components/icone.js'
 export default class app3 extends Component {
   constructor(props){
     super(props);
@@ -74,25 +75,23 @@ export default class app3 extends Component {
           
          
         </View>
-        <View></View>
-        <Text> computador: {this.state.escolhaComputador}</Text>
-        <Text> user: {this.state.escolhaUsuario}</Text>
-        <Text> res: {this.state.resultado} </Text>
+        <View>
+          <Text style={styles.txtResultado}> res: {this.state.resultado} </Text>
+          <Icone escolha={} jogador={}></Icone>
+          <Text> computador: {this.state.escolhaComputador}</Text>
+         
+          <Text> user: {this.state.escolhaUsuario}</Text>
+          <Image source={require('./imgs/jokenpo.png')}/>
+          
+        </View>
+        
         
       </View>
       );
   }
 }
 
-class Topo extends Component{
-  render(){
-    return (
-      <View>
-          <Image source={require('./imgs/jokenpo.png')}/>
-      </View>
-      );
-  }
-}
+
 const styles = StyleSheet.create({
   btnEscolha: {
     width:90
@@ -101,7 +100,7 @@ const styles = StyleSheet.create({
     flexDirection:'row',
     justifyContent:'space-between',
     marginTop: 10
-  }
+  },
   palco:{
     alignItens:'center',
     marginTop:10
@@ -110,6 +109,13 @@ const styles = StyleSheet.create({
     fontSize:25,
     fontWeight:'bold',
     color:'red'
+  },
+  icone:{
+    alignItens:'center',
+    marginTop:10
+  },
+  txtJogador:{
+    fontSize:18
   }
 });
 

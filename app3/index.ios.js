@@ -52,7 +52,7 @@ export default class app3 extends Component {
       }
     }
     this.setState({ escolhaUsuario:escolhaUsuario,
-                    escolhaComputador : escolhaComputador[numAleatorio]
+                    escolhaComputador : escolhaComputador[numAleatorio],
                     resultado: resultado});
   }
 

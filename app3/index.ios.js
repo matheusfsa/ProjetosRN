@@ -11,10 +11,9 @@ import {
   Text,
   View,
   Button,
-  Image
 } from 'react-native';
-import Topo from './src/components/topo.js'
-import Icone from './src/components/icone.js'
+import Topo from './src/components/topo.js';
+import Icone from './src/components/icone.js';
 export default class app3 extends Component {
   constructor(props){
     super(props);
@@ -23,19 +22,19 @@ export default class app3 extends Component {
                   resultado:""}
   }
   jokenpo(escolhaUsuario){
-    var escolhaComputador = ["pedra", "papel", "tesoura"];
-    var numAleatorio = Math.floor(Math.random()*3);
+    const escolhaComputador = ["pedra", "papel", "tesoura"];
+    const numAleatorio = Math.floor(Math.random()*3);
     
-    var resultado = "";
+    let resultado = "";
     if(escolhaComputador == "pedra"){
       if(escolhaUsuario == "pedra"){
         resultado = "Empate";
-      } else if(escolhaUsuario == "papel"){
+      } else if(escolhaUsuario == "papel") {
         resultado = "Vitória";
       } else {
         resultado = "Derrota";
       }
-    }else if(escolhaComputador == "papel"){
+    }else if(escolhaComputador == "papel") {
       if(escolhaUsuario == "pedra"){
         resultado = "Derrota";
       } else if(escolhaUsuario == "papel"){
@@ -52,15 +51,15 @@ export default class app3 extends Component {
         resultado = "Empate";
       }
     }
-    this.setState({ escolhaUsuario:escolhaUsuario,
-                    escolhaComputador : escolhaComputador[numAleatorio],
-                    resultado: resultado});
+    this.setState( { escolhaUsuario,
+                    escolhaComputador[numAleatorio],
+                    resultado});
   }
 
-  render(){
+  render() {
     return(
       <View>
-        <Topo></Topo>
+        <Topo />
         <View style={styles.painelAcoes}>
           <View style={styles.btnEscolha}>
             <Button title="pedra" onPress={() => {this.jokenpo('pedra')}}/>

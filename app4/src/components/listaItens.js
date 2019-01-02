@@ -20,7 +20,7 @@ export default class ListaItens extends Component {
     		{this.state.listaItens.map(item => {<Text key={item.titulo}>{item.titulo}</Text>})}
      		<Itens/>
      		<Itens/>
-     	<View>
+     	</View>
     );
   }
 }

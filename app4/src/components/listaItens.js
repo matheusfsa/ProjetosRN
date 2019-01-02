@@ -17,7 +17,7 @@ export default class ListaItens extends Component {
 			.catch(() => { console.log('Erro ao recuperar os dados'); });
   }
   render() {
-  	this.setState({listaItens:[ { "foto" : "http://faus.com.br/recursos/c/dmairr/imgs/mesa_vidro.jpg"}]});
+  	this.setState({listaItens:[{ "foto" : "http://faus.com.br/recursos/c/dmairr/imgs/mesa_vidro.jpg", "titulo" : "Mesa de vidro para computador", "valor": 160, "local_anuncio": "Santo AndrÃ©", "data_publicacao": "01/12/2016" }]});
     return (
     	<ScrollView>
     		{this.state.listaItens.map(item => {<Itens key={item.titulo} itens={item} />})}

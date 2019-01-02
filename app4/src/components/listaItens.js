@@ -1,4 +1,8 @@
 import React, { Component } from 'react';
+import {
+  View
+} from 'react-native';
+
 import axios from 'axios';
 import Itens from './itens.js';
 export default class ListaItens extends Component {

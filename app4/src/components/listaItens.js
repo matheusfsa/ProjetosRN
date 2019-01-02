@@ -20,7 +20,9 @@ export default class ListaItens extends Component {
     return (
     	<ScrollView>
     		{this.state.listaItens.map(item => {<Itens key={item.titulo} itens={item} />})}
+     		<Text>texto</Text>
      	</ScrollView>
+
     );
   }
 }

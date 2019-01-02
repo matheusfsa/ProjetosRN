@@ -13,14 +13,14 @@ export default class ListaItens extends Component {
   }
   componentWillMount(){
   	axios.get('http://faus.com.br/recursos/c/dmairr/api/itens.html')
-  	.then( response => { this.setState({listaItens: response.data}); })
-  	.catch(() => {<Text>Erro</Text> });
+			.then(response => { this.setState({ listaItens: response.data }); })
+			.catch(() => { console.log('Erro ao recuperar os dados'); });
   }
   render() {
     return (
     	<ScrollView>
     		{this.state.listaItens.map(item => {<Itens key={item.titulo} itens={item} />})}
-     		<Text>texto</Text>
+     		<Text>{this.state.listaItens}</Text>
      	</ScrollView>
 
     );

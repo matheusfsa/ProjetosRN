@@ -16,7 +16,7 @@ export default class ListaItens extends Component {
   }
   render() {
     return (
-    	<View style={styles.view}>
+    	<View>
     		{this.state.listaItens.map(item => {<Text key={item.titulo}>{item.titulo}</Text>})}
      		<Itens/>
      		<Itens/>
@@ -24,9 +24,4 @@ export default class ListaItens extends Component {
     );
   }
 }
-const styles = StyleSheet.create({
-  view:{
-    marginTop:20
-  },
-  
-});
+

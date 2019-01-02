@@ -12,7 +12,7 @@ export default class ListaItens extends Component {
   componentWillMount(){
   	axios.get('http://faus.com.br/recursos/c/dmairr/api/itens.html')
   	.then( response => { this.setState({listaItens: response.data}); })
-  	.cacth(() => {console.log('Erro'); });
+  	.catch(() => {console.log('Erro'); });
   }
   render() {
     return (

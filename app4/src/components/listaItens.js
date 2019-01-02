@@ -1,7 +1,4 @@
 import React, { Component } from 'react';
-import {
-  View
-} from 'react-native';
 import axios from 'axios';
 import Itens from './itens.js';
 export default class ListaItens extends Component {
@@ -17,9 +14,7 @@ export default class ListaItens extends Component {
   render() {
     return (
     	<View>
-    		{this.state.listaItens.map(item => {<Text key={item.titulo}>{item.titulo}</Text>})}
-     		<Itens/>
-     		<Itens/>
+    		{this.state.listaItens.map(item => {<Itens key={item.titulo} itens={item} />})}
      	</View>
     );
   }

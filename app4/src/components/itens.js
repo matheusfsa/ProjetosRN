@@ -36,7 +36,8 @@ const style = StyleSheet.create({
 		height:102
 	}
 	detalhesItem:{
-		marginLeft:20
+		marginLeft:20,
+		flex: 1
 	}
 	txtTitulo: {
 		fontSize:18,

@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import {Platform, StyleSheet, Text, View} from 'react-native';
 
 
-export default class App extends Component<Props> {
+export default class BarraNavegacao extends Component<Props> {
   render() {
     return (
       <View styles={styles.barraTitulo}>
@@ -21,7 +21,7 @@ const styles = StyleSheet.create({
   titulo: {
     flex: 1,
     fontSize: 18,
-    teextAlign: 'center',
+    textAlign: 'center',
     color: '#000'
   }
 });

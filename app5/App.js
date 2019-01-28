@@ -8,31 +8,16 @@
  */
 
 import React, {Component} from 'react';
-import {Platform, StyleSheet, Text, View} from 'react-native';
-import BarraNavegacao from "./src/components/BarraNavegacao";
+import {PText, View} from 'react-native';
+import CenaPrincipal from "./src/components/CenaPrincipal";
 export default class App extends Component<Props> {
   render() {
     return (
-      <BarraNavegacao/>
+      <View>
+        <CenaPrincipal/>
+      </View>  
     );
   }
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#F5FCFF',
-  },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
-  },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5,
-  },
-});
+

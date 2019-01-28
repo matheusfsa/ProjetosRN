@@ -24,12 +24,12 @@ export default class CenaPrincipal extends Component {
 
         <View style={styles.rodape}>
           <TouchableHighlight
-            onPress={() => {Actions.sobrejogo()}}
+            onPress={() => {Actions.sobrejogo();}}
           >
             <Image source={btnSobreJogo} />
           </TouchableHighlight>
           <TouchableHighlight
-            onPress={() => {Actions.outrosjogos()}}
+            onPress={() => {Actions.outrosjogos();}}
           >
             <Image source={btnOutrosJogos} />
           </TouchableHighlight>

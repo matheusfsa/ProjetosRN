@@ -53,6 +53,12 @@ export default class Principal extends Component {
 }
 
 const styles = StyleSheet.create({
+   button: {
+    marginBottom: 30,
+    width: 50,
+    alignItems: 'center',
+    backgroundColor: '#2196F3'
+  },
   cadastro:{
     marginTop: 30,
     alignItems: 'center'

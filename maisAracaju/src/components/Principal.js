@@ -55,7 +55,7 @@ export default class Principal extends Component {
 const styles = StyleSheet.create({
    button: {
     marginBottom: 30,
-    width: 100,
+    width: 80,
     height: 50,
     alignItems: 'center',
     borderRadius:10,

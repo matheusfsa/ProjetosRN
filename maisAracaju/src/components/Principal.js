@@ -16,8 +16,8 @@ export default class Principal extends Component {
 		    <View style={styles.container}>
 		      	<View style={styles.cadastro}>
 			        <TouchableHighlight onPress={this._onPressButton} underlayColor="white">
-			          	<View style={styles.button}>
-			            	<Text style={styles.buttonText}>Cadastre-se</Text>
+			          	<View style={styles.buttonCadastro}>
+			            	<Text style={styles.buttonTextCadastro}>Cadastre-se</Text>
 			          	</View>
 		        	</TouchableHighlight>
 		        </View>
@@ -25,24 +25,24 @@ export default class Principal extends Component {
 	        		<View style={styles.menu}>
 				        <TouchableHighlight onPress={this._onPressButton} underlayColor="white">
 				          	<View style={styles.button}>
-				            	<Text style={styles.buttonText}>Quem Somos?</Text>
+				            	<Text style={styles.buttonTextC1}> Quem Somos?</Text>
 				          	</View>
 			        	</TouchableHighlight>
 				        <TouchableHighlight onPress={this._onPressButton} underlayColor="white">
 				          	<View style={styles.button}>
-				            	<Text style={styles.buttonText}>Como Funciona?</Text>
+				            	<Text style={styles.buttonTextC1}>   Como Funciona?</Text>
 				          	</View>
 			        	</TouchableHighlight>
 			        </View>
 			        <View style={styles.menu}>
 				        <TouchableHighlight onPress={this._onPressButton} underlayColor="white">
 				          	<View style={styles.button}>
-				            	<Text style={styles.buttonText}>Sugestões</Text>
+				            	<Text style={styles.buttonTextC2}>Sugestões</Text>
 				          	</View>
 			        	</TouchableHighlight>
 				        <TouchableHighlight onPress={this._onPressButton} underlayColor="white">
 				          	<View style={styles.button}>
-				            	<Text style={styles.buttonText}>Notícias</Text>
+				            	<Text style={styles.buttonTextC2}>Notícias</Text>
 				          	</View>
 			        	</TouchableHighlight>
 		        	</View>
@@ -53,29 +53,53 @@ export default class Principal extends Component {
 }
 
 const styles = StyleSheet.create({
+   
    button: {
     marginBottom: 30,
     width: 80,
-    height: 50,
+    height: 80,
     alignItems: 'center',
     borderRadius:10,
-    backgroundColor: '#2196F3'
+    margin: 15, 
+    backgroundColor: '#B0E1DD'
   },
-  cadastro:{
-    marginTop: 30,
-    alignItems: 'center'
+  buttonCadastro: {
+    marginBottom: 30,
+    width: 185,
+    height: 60,
+    alignItems: 'center',
+    borderRadius:10,
+    margin: 15, 
+    backgroundColor: '#B0E1DD'
   },
   container: {
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#F5FCFF',
+    backgroundColor: '#6098A9',
   },
   menu: {
     alignItems: 'center' 
   },
   menuGrupo: {
     flexDirection: 'row' 
+  },
+  buttonTextC1: {
+    marginTop:20,
+    alignItems:'center',
+    fontSize:15,
+    justifyContent:'center'
+  },
+  buttonTextC2: {
+    marginTop:30,
+    alignItems:'center',
+    fontSize:15,
+    justifyContent:'center'
+  },
+  buttonTextCadastro: {
+    marginTop:15,
+    alignItems:'center',
+    fontSize:20,
+    justifyContent:'center'
   }
-
 });

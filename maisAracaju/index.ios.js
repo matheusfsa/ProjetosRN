@@ -8,7 +8,7 @@ import React, { Component } from 'react';
 import {
   AppRegistry
 } from 'react-native';
-import Principal from "./src/principal";
+import Principal from "./src/components/Principal";
 export default class maisAracaju extends Component {
   render() {
     return (

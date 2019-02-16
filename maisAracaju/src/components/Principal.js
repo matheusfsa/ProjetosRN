@@ -57,7 +57,7 @@ const styles = StyleSheet.create({
     marginBottom: 30,
     width: 100,
     alignItems: 'center',
-    borderRadius:10
+    borderRadius:10,
     backgroundColor: '#2196F3'
   },
   cadastro:{

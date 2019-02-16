@@ -23,7 +23,7 @@ export default class CenaPrincipal extends Component<Props> {
             <Image style={styles.imgMenu} source={menu_cliente}/>
             <Image style={styles.imgMenu} source={menu_contato}/>
           </View>
-          <View style={styles.menuGrupo}>
+          <View style={styles.menu}>
             <Image style={styles.imgMenu} source={menu_empresa}/>
             <Image style={styles.imgMenu} source={menu_servico}/>
           </View>

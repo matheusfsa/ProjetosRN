@@ -3,7 +3,8 @@ import {
   TouchableHighlight,
   StyleSheet,
   Text,
-  View
+  View,
+  Alert
 } from 'react-native';
 
 export default class Principal extends Component {
@@ -21,7 +22,7 @@ export default class Principal extends Component {
 		        	</TouchableHighlight>
 		        </View>
 	        	<View style={styles.menuGrupo}>
-	        		<View style={styles.menuGrupo}>
+	        		<View style={styles.menu}>
 				        <TouchableHighlight onPress={this._onPressButton} underlayColor="white">
 				          	<View style={styles.button}>
 				            	<Text style={styles.buttonText}>Quem Somos?</Text>
@@ -33,7 +34,7 @@ export default class Principal extends Component {
 				          	</View>
 			        	</TouchableHighlight>
 			        </View>
-			        <View style={styles.menuGrupo}>
+			        <View style={styles.menu}>
 				        <TouchableHighlight onPress={this._onPressButton} underlayColor="white">
 				          	<View style={styles.button}>
 				            	<Text style={styles.buttonText}>Sugestões</Text>

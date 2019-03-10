@@ -8,7 +8,7 @@ import React, { Component } from 'react';
 import {
   AppRegistry
 } from 'react-native';
-import Routes from "./src/components/Routes";
+import Routes from "./src/Routes";
 export default class maisAracaju extends Component {
   render() {
     return (

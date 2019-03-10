@@ -6,6 +6,7 @@ import {
   View,
   Alert
 } from 'react-native';
+import { Actions } from 'react-native-router-flux';
 
 export default class Principal extends Component {
 	_onPressButton() {
@@ -15,7 +16,7 @@ export default class Principal extends Component {
 	    return (
 		    <View style={styles.container}>
 		      	<View style={styles.cadastro}>
-			        <TouchableHighlight onPress={this._onPressButton} underlayColor="white">
+			        <TouchableHighlight onPress={() => Actions.formPessoa()} underlayColor="white">
 			          	<View style={styles.buttonCadastro}>
 			            	<Text style={styles.buttonTextCadastro}>Cadastre-se</Text>
 			          	</View>
@@ -23,24 +24,24 @@ export default class Principal extends Component {
 		        </View>
 	        	<View style={styles.menuGrupo}>
 	        		<View style={styles.menu}>
-				        <TouchableHighlight onPress={this._onPressButton} underlayColor="white">
+				        <TouchableHighlight onPress={() => Actions.quemSomos()} underlayColor="white">
 				          	<View style={styles.button}>
 				            	<Text style={styles.buttonTextC1}> Quem Somos?</Text>
 				          	</View>
 			        	</TouchableHighlight>
-				        <TouchableHighlight onPress={this._onPressButton} underlayColor="white">
+				        <TouchableHighlight onPress={() => Actions.comoFunciona()} underlayColor="white">
 				          	<View style={styles.button}>
 				            	<Text style={styles.buttonTextC1}>   Como Funciona?</Text>
 				          	</View>
 			        	</TouchableHighlight>
 			        </View>
 			        <View style={styles.menu}>
-				        <TouchableHighlight onPress={this._onPressButton} underlayColor="white">
+				        <TouchableHighlight onPress={() => Actions.sugestoes()} underlayColor="white">
 				          	<View style={styles.button}>
 				            	<Text style={styles.buttonTextC2}>Sugestões</Text>
 				          	</View>
 			        	</TouchableHighlight>
-				        <TouchableHighlight onPress={this._onPressButton} underlayColor="white">
+				        <TouchableHighlight onPress={() => Actions.noticias()} underlayColor="white">
 				          	<View style={styles.button}>
 				            	<Text style={styles.buttonTextC2}>Notícias</Text>
 				          	</View>

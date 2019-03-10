@@ -8,11 +8,11 @@ import React, { Component } from 'react';
 import {
   AppRegistry
 } from 'react-native';
-import Principal from "./src/components/Principal";
+import Routes from "./src/components/Routes";
 export default class maisAracaju extends Component {
   render() {
     return (
-      <Principal />
+      <Routes />
     );
   }
 }

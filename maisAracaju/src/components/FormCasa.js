@@ -7,7 +7,7 @@ import {
 import { 
   cadastraPessoa
 } from '../actions/CadastroActions';
-export default class FormCasa extends Component {
+class FormCasa extends Component {
   _cadastraPessoa() {
 
     const { nome, sobrenome, cpf, numero, data_nascimento } = this.props;
@@ -71,4 +71,4 @@ export default connect(
   {
     cadastraPessoa
   }
-)(FormCadastro);
+)(FormCasa);

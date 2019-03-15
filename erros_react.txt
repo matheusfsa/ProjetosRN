@@ -1,0 +1,7 @@
+Problema
+	react.default.createContext is not a function 
+
+Solução
+	npm update react react-dom
+	npm install
+-------------------------------------------------------------

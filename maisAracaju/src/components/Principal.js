@@ -16,7 +16,7 @@ export default class Principal extends Component {
 	    return (
 		    <View style={styles.container}>
 		      	<View style={styles.cadastro}>
-			        <TouchableHighlight onPress={() => Actions.formPessoa()} underlayColor="white">
+			        <TouchableHighlight onPress={() => Actions.formPessoa()} underlayColor="#6098A9">
 			          	<View style={styles.buttonCadastro}>
 			            	<Text style={styles.buttonTextCadastro}>Cadastre-se</Text>
 			          	</View>
@@ -24,24 +24,24 @@ export default class Principal extends Component {
 		        </View>
 	        	<View style={styles.menuGrupo}>
 	        		<View style={styles.menu}>
-				        <TouchableHighlight onPress={() => Actions.quemSomos()} underlayColor="white">
+				        <TouchableHighlight onPress={() => Actions.quemSomos()} underlayColor="#6098A9">
 				          	<View style={styles.button}>
 				            	<Text style={styles.buttonTextC1}> Quem Somos?</Text>
 				          	</View>
 			        	</TouchableHighlight>
-				        <TouchableHighlight onPress={() => Actions.comoFunciona()} underlayColor="white">
+				        <TouchableHighlight onPress={() => Actions.comoFunciona()} underlayColor="#6098A9">
 				          	<View style={styles.button}>
 				            	<Text style={styles.buttonTextC1}>   Como Funciona?</Text>
 				          	</View>
 			        	</TouchableHighlight>
 			        </View>
 			        <View style={styles.menu}>
-				        <TouchableHighlight onPress={() => Actions.sugestoes()} underlayColor="white">
+				        <TouchableHighlight onPress={() => Actions.sugestoes()} underlayColor="#6098A9">
 				          	<View style={styles.button}>
 				            	<Text style={styles.buttonTextC2}>Sugestões</Text>
 				          	</View>
 			        	</TouchableHighlight>
-				        <TouchableHighlight onPress={() => Actions.noticias()} underlayColor="white">
+				        <TouchableHighlight onPress={() => Actions.noticias()} underlayColor="#6098A9">
 				          	<View style={styles.button}>
 				            	<Text style={styles.buttonTextC2}>Notícias</Text>
 				          	</View>
